@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background-image: url("img/photo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #222;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.9;
+}
+
+
+.header {
+  background: rgba(10, 218, 80, 0.65);
+
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.chapter {
+  margin-bottom: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(10, 218, 80, 0.65);
+  margin-top: 40px;
+}
