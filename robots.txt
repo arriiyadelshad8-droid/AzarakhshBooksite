@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arriiyadelshad8-droid.github.io/AzarakhshBooksite/
+Sitemap: https://arriiyadelshad8-droid.github.io/AzarakhshBooksite/sitemap.xml
