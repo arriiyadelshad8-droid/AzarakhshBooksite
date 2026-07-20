@@ -50,3 +50,45 @@ h1, h2, h3, h4, h5, h6 p {
   background: rgba(10, 218, 80, 0.65);
   margin-top: 40px;
 }
+
+.magic-text {
+    font-size: 50px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        #d9b3ff 20%,
+        #8a2be2 40%,
+        #ffffff 60%,
+        #b84dff 80%,
+        #ffffff 100%
+    );
+
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    animation: nebula 6s ease infinite;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.2),
+        0 0 15px rgba(170,90,255,.3),
+        0 0 25px rgba(138,43,226,.35);
+}
+
+@keyframes nebula {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
