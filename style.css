@@ -51,43 +51,58 @@ h1, h2, h3, h4, h5, h6 p {
   margin-top: 40px;
 }
 
-.magic-text {
-    font-size: 50px;
-    font-weight: bold;
+.magic-text{
+    font-size:50px;
+    font-weight:800;
+    letter-spacing:2px;
 
-    background: linear-gradient(
-        120deg,
-        #ffffff 0%,
-        #d9b3ff 20%,
-        #8a2be2 40%,
-        #ffffff 60%,
-        #b84dff 80%,
-        #ffffff 100%
-    );
+    background:
+        linear-gradient(
+            120deg,
+            #ffffff 0%,
+            #fdfdff 10%,
+            #d69cff 22%,
+            #7b2cff 35%,
+            #ffffff 48%,
+            #8a2be2 60%,
+            #c987ff 74%,
+            #ffffff 88%,
+            #7b2cff 100%
+        );
 
-    background-size: 300% 300%;
+    background-size:600% 100%;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    color:transparent;
 
-    animation: nebula 6s ease infinite;
+    animation:galaxy 10s linear infinite;
 
     text-shadow:
-        0 0 8px rgba(255,255,255,.2),
-        0 0 15px rgba(170,90,255,.3),
-        0 0 25px rgba(138,43,226,.35);
+        0 0 3px rgba(255,255,255,.45),
+        0 0 8px rgba(170,80,255,.35),
+        0 0 18px rgba(120,40,255,.25);
 }
 
-@keyframes nebula {
-    0% {
-        background-position: 0% 50%;
+@keyframes galaxy{
+
+    0%{
+        background-position:0% 50%;
+        filter:hue-rotate(0deg);
     }
 
-    50% {
-        background-position: 100% 50%;
+    50%{
+        background-position:100% 50%;
+        filter:hue-rotate(25deg);
     }
 
+    100%{
+        background-position:0% 50%;
+        filter:hue-rotate(0deg);
+    }
+
+}
     100% {
         background-position: 0% 50%;
     }
