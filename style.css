@@ -51,6 +51,48 @@ h1, h2, h3, h4, h5, h6 p {
   margin-top: 40px;
 }
 
+.custom-btn {
+    /* اندازه */
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* رنگ‌ها */
+    color: /* رنگ متن */;
+    background: #2E0854;
+    border: 2px solid: #9966CC;
+
+    /* ظاهر */
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+
+    /* افکت */
+    box-shadow: /* سایه */;
+    transition: all 0.3s ease;
+}
+
+/* حالت هاور */
+.custom-btn:hover {
+    background: /* رنگ هاور */;
+    color: /* رنگ متن هاور */;
+    border-color: /* رنگ حاشیه هاور */;
+    transform: translateY(-3px);
+    box-shadow: /* سایه هاور */;
+}
+
+/* هنگام کلیک */
+.custom-btn:active {
+    transform: scale(0.97);
+    box-shadow: /* سایه هنگام کلیک */;
+}
+
+/* هنگام فوکوس */
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px /* رنگ فوکوس */;
+}
+
 .magic-text{
     font-size:50px;
     font-weight:800;
