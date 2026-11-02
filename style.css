@@ -223,6 +223,44 @@ h1, h2, h3, h4, h5, h6 p {
     cursor: pointer !important;
     font-size: 12px !important;
 }
+/* استایل کانتینر دکمه‌ها */
+#mainContainer .controls {
+    position: absolute !important;
+    bottom: 50px !important; /* کمی بالاتر از دکمه فول اسکرین */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    gap: 15px !important;
+    z-index: 15 !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    padding: 8px 15px !important;
+    border-radius: 30px !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* استایل تک تک دکمه‌ها */
+#mainContainer .control-btn {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+/* افکت درخشش هنگام هاور (Hover) */
+#mainContainer .control-btn:hover {
+    color: #00d4ff !important;
+    transform: scale(1.2) !important;
+    text-shadow: 0 0 10px #00d4ff !important;
+}
+
 
 
 
