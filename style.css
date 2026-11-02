@@ -149,3 +149,100 @@ h1, h2, h3, h4, h5, h6 p {
         background-position: 0% 50%;
     }
 }
+
+:root {
+    --space-glow: #00d4ff;
+    --space-purple: #6a0dad;
+}
+
+/* کانتینر اصلی برای وسط‌چین کردن در صفحه */
+.space-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* قاب اصلی با استایل فضایی */
+.space-frame {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* اندازه قاب را اینجا تنظیم کنید */
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2), 
+                inset 0 0 20px rgba(106, 13, 173, 0.2);
+    background: #000;
+}
+
+/* استایل عکس پیش‌نمایش */
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* دکمه Play روی عکس */
+.play-trigger-btn {
+    position: absolute;
+    padding: 15px 30px;
+    background: rgba(0, 212, 255, 0.2);
+    border: 2px solid var(--space-glow);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    font-family: sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 0 15px var(--space-glow);
+}
+
+.play-trigger-btn:hover {
+    background: var(--space-glow);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* ویدیو */
+.content-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* دکمه فول اسکرین */
+.fullscreen-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.fullscreen-btn:hover {
+    background: var(--space-glow);
+}
+
