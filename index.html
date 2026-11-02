@@ -19,6 +19,33 @@
   </header>
   <audio controls loop src="audio.mp3"></audio>
 
+      <!-- شروع قاب فضایی -->
+<div class="space-container" id="mainContainer">
+    <div class="space-frame">
+        
+        <!-- بخش نمایش عکس (قبل از ویدیو) -->
+        <div class="media-overlay" id="imageOverlay">
+            <img src="YOUR_IMAGE_URL.jpg" alt="Thumbnail" class="preview-img">
+            <button class="play-trigger-btn" onclick="startVideo()">
+                <span>مشاهده تریلر</span>
+            </button>
+        </div>
+
+        <!-- بخش ویدیو -->
+        <video id="myVideo" class="content-video">
+            <source src="YOUR_VIDEO_URL.mp4" type="video/mp4">
+            مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+        </video>
+
+        <!-- دکمه فول اسکرین -->
+        <button class="fullscreen-btn" onclick="toggleFullScreen()">
+            ⛶
+        </button>
+    </div>
+</div>
+<!-- پایان قاب فضایی -->
+
+
   <main class="container">
     <section class="intro">
       <h2 class="magic-text">معرفی کتاب </h2>
