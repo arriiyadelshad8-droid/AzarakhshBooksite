@@ -30,3 +30,15 @@ function toggleFullScreen() {
         }
     }
 }
+// تابع پخش ویدیو
+function playVid() {
+    const video = document.getElementById('myVideo');
+    video.play();
+}
+
+// تابع توقف ویدیو
+function pauseVid() {
+    const video = document.getElementById('myVideo');
+    video.pause();
+}
+
